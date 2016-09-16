@@ -1,0 +1,18 @@
+{
+  "libs": [
+  ],
+  "loadEagerly": [
+    "src/*.js",
+    "test/*.js",
+    "node_modules/*.js"
+  ],
+  "plugins": {
+    "modules": {},
+    "node": {},
+    "node_resolve": {},
+    "es_modules": {},
+    "complete_strings": {},
+    "commonjs": {},
+    "doc_comment": {}
+  }
+}

@@ -12,6 +12,8 @@ or, if you prefer old fashioned downloads, [click here for the minified UMD file
 
 ### Javascript
 ```
+var Clocky = require('clocky').default
+
 var clocky = new Clocky({
   onTick: function (ticks, startedAt, elapsed) {
     console.log('ticked ' + ticks + ' times')

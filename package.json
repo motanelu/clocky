@@ -25,6 +25,7 @@
   "author": "Tudor Barbu <hello@tudorbarbu.ninja>",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "tonicExampleFilename": "docs/tonic-example.js",
   "bugs": {
     "url": "https://github.com/motanelu/clocky/issues"
   },

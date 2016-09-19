@@ -1,8 +1,8 @@
 {
   "name": "clocky",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Call functions at various intervals",
-  "main": "dist/clocky.js",
+  "main": "dist/clocky.min.js",
   "scripts": {
     "build": "browserify -t babelify src/clocky.js --standalone Clocky | uglifyjs > dist/clocky.min.js",
     "lint": "standard",

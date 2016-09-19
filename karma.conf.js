@@ -1,21 +1,22 @@
 var TARGET = process.env.npm_lifecycle_event
 var config = {
-
   basePath: '',
-
   frameworks: ['browserify', 'mocha'],
-
   files: [
     'node_modules/babel-polyfill/browser.js',
     'src/**/*.js',
     'test/**/*Spec.js'
   ],
-
-  reporters: ['spec'],
+  coverageReporter: {
+    reporters: [
+      { type: 'text-summary' }
+    ]
+  },
+  reporters: ['spec', 'coverage'],
 
   preprocessors: {
     'test/**/*.js': ['browserify'],
-    'src/**/*.js': ['browserify']
+    'src/**/*.js': ['browserify', 'coverage']
   },
 
   browsers: ['PhantomJS'],
@@ -36,6 +37,13 @@ var config = {
       reporter: 'html'
     }
   }
+}
+
+if (process.env.TRAVIS) {
+  config.coverageReporter.reporters.push({ type: 'lcov', dir: 'coverage' })
+  config.reporters.push('coveralls')
+} else {
+  config.coverageReporter.reporters.push({ type: 'html', dir: 'coverage', 'subdir': '.' })
 }
 
 if (TARGET === 'test:watch') {

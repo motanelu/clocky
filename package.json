@@ -4,7 +4,8 @@
   "description": "Call functions at various intervals",
   "main": "dist/clocky.js",
   "scripts": {
-    "build": "rimraf dist && babel ./src/ -d dist/src",
+    "build": "browserify -t babelify src/clocky.js --standalone Clocky | uglifyjs > dist/clocky.min.js",
+    "coverage": "NODE_ENV=test karma start --single-run",
     "lint": "standard",
     "lint-staged": "lint-staged",
     "lint:fix": "standard --fix",
@@ -17,7 +18,7 @@
     "url": "git+https://github.com/motanelu/clocky.git"
   },
   "keywords": [
-    "timer"
+    "timer", "clock", "timeout", "interval"
   ],
   "author": "Tudor Barbu <hello@tudorbarbu.ninja>",
   "license": "MIT",

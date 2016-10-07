@@ -1,4 +1,4 @@
-var Clocky = require('clocky').default
+var Clocky = require('clocky')
 
 var clocky = new Clocky()
 clocky

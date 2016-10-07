@@ -1,6 +1,6 @@
 {
   "name": "clocky",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Call functions at various intervals",
   "main": "dist/clocky.min.js",
   "scripts": {

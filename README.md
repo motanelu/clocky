@@ -1,6 +1,6 @@
 # Clocky [![Build Status](https://travis-ci.org/motanelu/clocky.svg?branch=master)](https://travis-ci.org/motanelu/clocky) [![Coverage Status](https://coveralls.io/repos/github/motanelu/clocky/badge.svg?branch=master)](https://coveralls.io/github/motanelu/clocky?branch=master) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/motanelu/clocky/blob/master/LICENSE.md)
 
-Clocky executes callbacks at predefined intervals called ticks.
+Clocky executes callbacks at predefined intervals called ticks, providing an easy-to-use wrapper around the built in setInterval method.
 
 ## Installation
 Simplest option, with npm:
@@ -75,9 +75,6 @@ clocky
     console.log(`total elapsed time (including pauses): ${elapsed} seconds`)
   })
   .start()
-})
-
-clocky.start()
 ```
 
 ### State

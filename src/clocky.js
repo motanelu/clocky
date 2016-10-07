@@ -6,7 +6,7 @@ function datediff (first, second) {
   return Math.round(Math.abs(first.getTime() - second.getTime()) / 1000)
 }
 
-export default class Clocky {
+export class Clocky {
   /**
    * @return {string}
    */

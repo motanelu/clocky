@@ -1,7 +1,7 @@
 import {expect} from 'chai'
 import sinon from 'sinon'
 
-import Clocky from '../src/clocky'
+import {Clocky} from '../src/clocky'
 
 describe('Clocky suite', () => {
   let start = sinon.spy()

@@ -42,3 +42,54 @@ let clocky = new Clocky({
 
 clocky.start()
 ```
+
+# Clocky
+
+## Installation
+``
+npm install clocky
+``
+
+## Usage
+``
+import Clocky from clocky
+
+let timer = new Clocky()
+
+``
+
+## API
+
+### runFor()
+
+### tickEvery()
+
+### tickOnResume()
+
+### tickOnStart()
+
+### on()
+
+### onStart()
+
+### onPause()
+
+
+### onResume()
+
+### onStop()
+
+### onTick()
+
+
+### start()
+
+### pause()
+
+
+### resume()
+
+### stop()
+
+### getStatus()
+>>>>>>> Stashed changes
